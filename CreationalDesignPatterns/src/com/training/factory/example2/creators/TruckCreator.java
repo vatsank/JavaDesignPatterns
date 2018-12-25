@@ -15,13 +15,14 @@ public class TruckCreator implements Creator {
 	 * (non-Javadoc)
 	 * @see com.training.creators.Creator#createTransport()
 	 */
-	String mode ="land";
+	String mode ="flight";
 	@Override
-	public Transport createTransport() {
+	public Transport createTransport(String src, String destination) {
 
+		findTransport(src, destination);
 		 
 		  if(this.mode.equals("land")) {
-			  return new Truck();
+			  return new Truck(14,.5);
 		  }
 		
 		  if(this.mode.equals("flight")) {
@@ -33,11 +34,10 @@ public class TruckCreator implements Creator {
 		 
 	}
 
-	@Override
-	public void setRoute(String src, String destination) {
+	private void findTransport(String src, String destination) {
 
 		 if(src.equals("chennai") && destination.equals("mumbai")){
-			 this.mode = "flight";
+			 this.mode = "land";
 		 } else {
 			 this.mode =  "ship";
 		 }

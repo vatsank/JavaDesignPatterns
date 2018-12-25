@@ -9,6 +9,5 @@ import com.training.factory.example2.products.Transport;
  */
 public interface Creator {
 
-	public Transport createTransport();
-	public void setRoute(String src, String destination);
+	public Transport createTransport(String src, String destination);
 }

@@ -11,7 +11,7 @@ public class SimpleFactory {
 		
 		switch (key) {
 		case 1:
-			return new Truck();
+			return new Truck(14,.10);
 		case 2:
 			return new Ship();
 

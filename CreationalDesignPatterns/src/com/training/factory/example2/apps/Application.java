@@ -10,7 +10,7 @@ public class Application {
 
 		Creator factory = new TruckCreator();
 		
-		   Transport mode =  factory.createTransport();
+		   Transport mode =  factory.createTransport("chennai","mumbai");
 		   
 		   
 		   System.out.println(mode.estimate(100));

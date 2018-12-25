@@ -11,10 +11,6 @@ public class Truck implements Transport {
 	private double tax;
 	private double amount;
 	
-	public Truck() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	public Truck(double ratePerKm, double tax) {
 		super();
