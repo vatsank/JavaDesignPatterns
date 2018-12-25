@@ -10,5 +10,5 @@ import com.training.factory.example2.products.Transport;
 public interface Creator {
 
 	public Transport createTransport();
-	public double showEstimate(double distance);
+	public void setRoute(String src, String destination);
 }
