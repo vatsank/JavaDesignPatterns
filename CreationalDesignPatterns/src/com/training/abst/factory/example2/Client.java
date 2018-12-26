@@ -12,7 +12,10 @@ public class Client {
 	public void getProducts() {
 		
 		System.out.println(factory.getDeposit().getInterestRate());
+		
 		System.out.println(factory.getLoan().getEligibility());
+	
+		 System.out.println(factory.getLoan().getInterest());
 	}
 	
 	
@@ -30,6 +33,7 @@ public class Client {
 		 Client client2 = new Client(fact2);
 		 
 		 client2.getProducts();
+		 
 		 
 		 
 		 
