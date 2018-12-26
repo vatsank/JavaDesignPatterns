@@ -17,10 +17,11 @@ public class AccountAdapter extends  SavingsAccount {
 	@Override
 	public double calculate() {
 		
-		double amt =card.calculateMinimumAmtDue();
-		System.out.println("Your Credit Card Due"+ amt);
+		System.out.println("Your Credit Card Due"+ card.calculateMinimumAmtDue());
 		System.out.println("Your Savings Due"+super.calculate());
 		
+		double amt =card.calculateMinimumAmtDue() + super.calculate();
+
 		return amt;
 	}
 	

@@ -8,27 +8,31 @@ public class DecoratorExample {
 
 		 BankAccount account1 = new SavingsAccount();
 		 
-				System.out.println("Minimum Balance "+account1.balanceToMaintain());
+				//System.out.println("Minimum Balance "+account1.balanceToMaintain());
 		
 		 	 
 		 
-		 //FeatureDectorator account1x = new OnlineBanking(account1);
-		 
-				OnlineBanking account1x = new OnlineBanking(account1);
-				
-		 	System.out.println("Minimum Balance with One Feature"+account1x.balanceToMaintain());
-   		
-		 
-		 	 
-		 //FeatureDectorator account2x = new InternationalBanking(new OnlineBanking(account1));
+		// FeatureDectorator account1x = new OnlineBanking(account1);
+//		 
+//			OnlineBanking account1x = new OnlineBanking(account1);
+//				
+//		 	System.out.println("Minimum Balance with One Feature"+account1x.balanceToMaintain());
+//		 	System.out.println(account1x.chequeBookRequest());
+//		 	
+//   		
+//		 
+//		 	 
+		 FeatureDectorator account2x = new InternationalBanking(new OnlineBanking(account1));
 		
-		 InternationalBanking account2x = new InternationalBanking(new OnlineBanking(account1));
+		// InternationalBanking account2x = new InternationalBanking(new OnlineBanking(account1));
+		 
+		   
 			
-		 
+		         System.out.println(((InternationalBanking)account2x).airportLoungeAccess());
            		 System.out.println("Minimum Balance with Two Feature"+account2x.balanceToMaintain());
-           		 
-
-           		 
+//           		 
+//
+//           		 
 		 
 	}
 

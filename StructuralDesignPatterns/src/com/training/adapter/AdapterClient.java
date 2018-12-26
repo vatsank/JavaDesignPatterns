@@ -9,7 +9,9 @@ public class AdapterClient {
 		
 		AccountAdapter adapter=new AccountAdapter(card);
 		
-		 adapter.calculate();
+		double total = adapter.calculate();
+		
+		System.out.println("Your total dues :="+ total);
 		 
 	}
 }
