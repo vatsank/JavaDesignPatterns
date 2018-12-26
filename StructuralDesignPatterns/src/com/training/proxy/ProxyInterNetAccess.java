@@ -13,7 +13,7 @@ public class ProxyInterNetAccess implements InterNetAccess {
 
 	public ProxyInterNetAccess() {
 		super();
-		real=new InterNetAccessImpl();
+		// real=new InterNetAccessImpl();
 	}
 
 
@@ -23,6 +23,7 @@ public class ProxyInterNetAccess implements InterNetAccess {
 	if(this.empGrade>5)
 	{
 		System.out.println("Proxy Up-Delegating to Real");
+		real=new InterNetAccessImpl();
 		real.grantPermission();
 	}
 	else

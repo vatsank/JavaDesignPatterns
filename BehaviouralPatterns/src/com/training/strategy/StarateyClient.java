@@ -8,7 +8,7 @@ public class StarateyClient {
 		Patient p1 = new Patient();
 		
 			
-		p1.setStrategy(new CardPayment());
+		p1.setStrategy(new CashLessPayment());
 		
 		p1.makePayment(20500.00);
 		
