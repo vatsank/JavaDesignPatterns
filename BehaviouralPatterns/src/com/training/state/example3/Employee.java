@@ -8,13 +8,6 @@ public class Employee {
 	private ApplicationState leaveApplicationState ;
 
 	
-
-	@Override
-	public String toString() {
-		return "Employee [empName=" + empName + ", designation=" + designation + "]";
-	}
-
-
 	public Employee(String empName, String designation) {
 		super();
 		this.empName = empName;
@@ -47,8 +40,11 @@ public class Employee {
    leaveApplicationState.printStatus();
    }
    
-	
-	
+	@Override
+	public String toString() {
+		return "Employee [empName=" + empName + ", designation=" + designation + "]";
+	}
+
 	
 	
 }
