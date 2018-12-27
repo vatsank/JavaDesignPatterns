@@ -14,7 +14,6 @@ public class Parcel {
 
 	public Parcel() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public void previousState() {
@@ -23,9 +22,13 @@ public class Parcel {
 
 	public void nextState() {
 		state.next(this);
+	
 	}
 	
 	public void printState() {
 		state.printStatus();
+		
 	}
+	
+
 }

@@ -15,8 +15,7 @@ public class Client {
 		 pkg.nextState();
 		 pkg.printState();
 		 
-		 pkg.nextState();
-		 pkg.printState();
+		
 		 
 	}
 

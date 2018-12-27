@@ -22,6 +22,7 @@ public class MyStateContext {
 
 	public void changeState(MyState newState){
 	this.mycurrentState = newState;
+	
 	}
 	 
 	public String saySomething(){
