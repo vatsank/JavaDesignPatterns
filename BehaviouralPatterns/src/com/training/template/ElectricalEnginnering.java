@@ -3,15 +3,19 @@ package com.training.template;
 public class ElectricalEnginnering extends BasicEngineering {
 
 	@Override
-	public void electives() {
+	public double electives() {
 
-		System.out.println("Circuit Theory");
+		System.out.println("Electives := Circuit Theory");
+		
+		return 45;
 	}
 
 	@Override
-	public void englishTest() {
+	public double englishTest() {
 
-		System.out.println("Basic Level");
+		System.out.println("English =>Basic Level");
+		
+		return 55;
 	}
 
 	

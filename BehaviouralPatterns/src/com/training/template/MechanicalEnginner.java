@@ -3,9 +3,11 @@ package com.training.template;
 public class MechanicalEnginner extends BasicEngineering {
 
 	@Override
-	public void electives() {
+	public double electives() {
 
-		System.out.println("Thermodynamics");
+		System.out.println("Electives := Thermodynamics");
+		
+		return 65;
 	}
 
 }
