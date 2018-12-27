@@ -7,14 +7,15 @@ public class ReportingManager implements ApplicationState {
 	public void next(Employee emp) {
 
 		this.emp = emp;
-		emp.setLeaveApplicationState(new HRManager());
+        emp.setLeaveApplicationState(new HRManager(emp));
 		
 	}
 
 	@Override
 	public void printStatus() {
 
-		System.out.println(this.emp + "Reporting Manager has accepted the request");
+	  System.out.println("Received by Reporting Manager");
+	
 	}
 
 }

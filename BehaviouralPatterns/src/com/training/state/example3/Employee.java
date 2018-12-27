@@ -7,11 +7,13 @@ public class Employee {
 	
 	private ApplicationState leaveApplicationState ;
 
+	
+
 	@Override
 	public String toString() {
-		return "Employee [empName=" + empName + ", designation=" + designation + ", leaveApplicationState="
-				+ leaveApplicationState + "]";
+		return "Employee [empName=" + empName + ", designation=" + designation + "]";
 	}
+
 
 	public Employee(String empName, String designation) {
 		super();
@@ -42,6 +44,11 @@ public class Employee {
 
    public void printState() {
 	 
-	   System.out.println("Reuest sent for Reporting Manager");
-	  }
+   leaveApplicationState.printStatus();
+   }
+   
+	
+	
+	
+	
 }
