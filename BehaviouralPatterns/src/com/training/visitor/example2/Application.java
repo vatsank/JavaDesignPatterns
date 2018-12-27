@@ -19,6 +19,9 @@ public class Application {
            bag.setItems(items);
  
            System.out.println("least valued :"+ bag.findLeastValued());
+           
+           System.out.println("High valued :"+ bag.findHightValued());
+           
 	}
 
 }

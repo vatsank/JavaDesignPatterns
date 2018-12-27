@@ -2,13 +2,13 @@ package com.training.visitor.example2;
 
 public class BookCart implements MyVisitable{
 
-	int bookList[] = {245,526,768,112,130};
+	Integer bookList[] = {245,526,768,112,130};
 	
-	public int[] getBookList() {
+	public Integer[] getBookList() {
 		return bookList;
 	}
 
-	public void setBookList(int[] bookList) {
+	public void setBookList(Integer[] bookList) {
 		this.bookList = bookList;
 	}
 

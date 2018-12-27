@@ -1,6 +1,8 @@
 package com.training.visitor.example2;
 
 import java.util.*;
+
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
 public class ShoppingBag {
 
 	
@@ -18,16 +20,28 @@ public class ShoppingBag {
 	public void setItems(List<MyVisitable> items) {
 		this.items = items;
 	}
-	
-	 public int findLeastValued() {
-		 
-		 LeastPriceFinder finder = new LeastPriceFinder();
+	private MinMaxFinder getVisitor() {
+		
+		MinMaxFinder finder = new MinMaxFinder();
 		 
 		 for(MyVisitable eachItem :items) {
 			 eachItem.accept(finder);
 		 }
+		
+		 return finder;
+	}
+	 public int findLeastValued() {
 		 
-		 int minValue  =finder.findMininum();
+		  
+		 int minValue  =getVisitor().findMininum();
 		 return minValue;
 	 }
+	 
+public int findHightValued() {
+		 
+		  
+		 int minValue  =getVisitor().findMaximum();
+		 return minValue;
+	 }
+	 
 }
